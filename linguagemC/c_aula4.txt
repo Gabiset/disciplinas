@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    char char_input;
+    int int_input;
+    float float_input;
+
+    // Lê um caractereprintf("Digite um caractere: ");
+    scanf(" %c", &char_input);
+
+    // Lê um número inteiroprintf("Digite um número inteiro: ");
+    scanf("%d", &int_input);
+
+    // Lê um número realprintf("Digite um número real: ");
+    scanf("%f", &float_input);
+
+    // Exibe as entradasprintf("Caractere digitado: %c\n", char_input);
+    printf("Número inteiro digitado: %d\n", int_input);
+    printf("Número real digitado: %.2f\n", float_input);
+
+    return 0;
+}
