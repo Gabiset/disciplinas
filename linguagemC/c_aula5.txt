@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+  float pi = 3.14, r = 10, area;
+
+  printf("considere pi como: %.2f\n",pi);
+
+  printf("considere r como: %.f\n",r);
+  
+
+  area = 2 * pi / r;
+
+  printf("a area do circulo equivale à: %.2f = 2 * %.2f\n",area,2,pi,r);
+  
+  return 0;
+}
