@@ -1,0 +1,25 @@
+#include <stdio.h>
+ 
+int main(void) { 
+  float ALTURA, PESOH, PESOM;
+  char SEXO;
+ 
+printf("BEM VINDO A CALCULADORA DE PESO IDEAL!!\n");
+ 
+  printf("Informe sua altura aqui:\n");
+  scanf("%f", &ALTURA);
+ 
+  printf("Informe seu gênero (M or F:)\n");
+  scanf(" %c", &SEXO);
+ 
+  PESOH = (72.7 * ALTURA - 58);
+ 
+  PESOM = (62.1 * ALTURA - 44.7);
+ 
+  if (SEXO == 'M')
+ 
+    printf("Seu peso ideal é: %.2f\n",PESOH);
+  else
+    printf("Seu peso ideal é: %.2f\n",PESOM);
+  return 0;
+}
