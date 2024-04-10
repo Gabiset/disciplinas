@@ -1,0 +1,14 @@
+//este programa verifica se numero é par ou impar  
+#include <stdio.h>
+
+int main() {
+  int n;
+  printf("Digite um numero: ");
+  scanf("%i", &n);
+if (n%2==0)
+  // se o resto da divisão de n por 2 for igual a zero
+  printf("numero par!\n");
+else
+  printf("numero impar\n");
+  return (0);
+}
