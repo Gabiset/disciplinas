@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int tamanho = 10;
+    int vetor1[tamanho];
+    int vetor2[tamanho];
+    int vetor_soma[tamanho];
+
+    
+    for (int i = 0; i < tamanho; ++i) {
+        printf("Digite o %dº valor para o primeiro vetor: ", i + 1);
+        scanf("%d", &vetor1[i]);
+        printf("Digite o %dº valor para o segundo vetor: ", i + 1);
+        scanf("%d", &vetor2[i]);
+    }
+
+  
+    for (int i = 0; i < tamanho; ++i) {
+        vetor_soma[i] = vetor1[i] + vetor2[i];
+    }
+
+    
+    printf("Terceiro vetor (soma dos elementos):\n");
+    for (int i = 0; i < tamanho; ++i) {
+        printf("%d ", vetor_soma[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
